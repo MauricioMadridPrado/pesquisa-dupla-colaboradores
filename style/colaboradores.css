@@ -1,0 +1,17 @@
+
+.colaboradores{
+    width: fit-content;
+    padding: 3em;
+    height: 300px;
+    overflow: auto;
+}
+.colaborador__dados{
+    border: 3px solid black;
+    padding: 1em;
+    list-style: none;
+    margin: 0;
+}
+.colaborador__dados__item{
+    padding: 0.5em;
+    border: 1px solid black;
+}
