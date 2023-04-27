@@ -1,4 +1,4 @@
-import { colaboradores } from "./listaColaboradores.js";
+import { listaDeColaboradores } from "./listaColaboradores.js";
 import { menuPesquisa } from "./criaListaDeNomes.js";
 import { criaListaColaboradores } from "./criaLista.js";
 import { colaboradoresContainer } from "./criaLista.js";
@@ -11,7 +11,7 @@ export function filtraLista() {
     `
     `
     const pesquisa = event.target.value;
-    const listaFiltrada = colaboradores.filter(
+    const listaFiltrada = listaDeColaboradores.filter(
       (colaborador) => colaborador.nome == pesquisa
     );
 

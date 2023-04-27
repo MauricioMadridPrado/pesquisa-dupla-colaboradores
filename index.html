@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Colaboradores-dataset</title>
-</head>
-<body>
-    <section id="pesquisa" class="pesquisa">
+  </head>
+  <body>
+    <div class="container__conteudo">
+      <div class="cadastro__container">
+        <button class="botao__cadastro" data-cadastro="botao">Cadastro</button>
+      </div>
+      <section id="pesquisa" class="pesquisa">
         <label for="pesquisa">Pesquisa por nome</label>
         <select id="menu__pesquisa" class="pesquisa__nomes">
-            <option class="nome"></option>
+          <option class="nome"></option>
         </select>
-    </section>
-    <section  id="pesquisa__cpf" class="pesquisa">
+        <label>Pesquisa por cpf</label>
+        <select id="menu__pesquisa__cpf" class="pesquisa__nomes"></select>
+      </section>
+      <section id="pesquisa__cpf" class="pesquisa"></section>
+      <section class="colaboradores" id="colaboradores"></section>
+      <script src="./js/main.js" type="module"></script>
+    </div>
 
+    <section data-modal="container" class="modal__container">
+      <div class="modal">
+        <button class="botao__fechar" data-modal="fechar">X</button>
+            <form data-modal="formulario">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Digite o nome" required/>
+
+                <label for="cpf">Cpf</label>
+                <input  id="cpf" type="number" placeholder="Digite o CPF" required/>
+
+                <label for="telefone">Telefone</label>
+                <input  id="telefone" type="number" placeholder="Digite o telefone" required/>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Digite o email" required/>
+
+                <div class="container__botao__cadastrar">
+                <button  class="botao__cadastrar" data-modal="cadastrar" type="submit" >
+                Cadastrar
+                </button>
+                <div>
+            </form>
+
+
+      </div>
     </section>
-    <section class="colaboradores" id="colaboradores">
-        
-    </section>
-    <script src="./js/main.js" type="module"></script>
-</body>
+  </body>
 </html>

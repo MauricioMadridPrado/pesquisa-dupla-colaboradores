@@ -1,4 +1,4 @@
-export const colaboradores = [
+export const listaDeColaboradores = [
     {
       nome: "Mauricio Prado",
       cpf: "11111111111",

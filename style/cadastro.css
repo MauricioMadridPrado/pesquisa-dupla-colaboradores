@@ -1,0 +1,11 @@
+.cadastro__container {
+}
+.botao__cadastro {
+    background: black;
+    color: wheat;
+    padding: 0.5em 1em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}

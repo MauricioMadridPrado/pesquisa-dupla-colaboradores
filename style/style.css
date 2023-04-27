@@ -1,8 +1,9 @@
 @import url('./colaboradores.css');
 @import url('./pesquisa.css');
-body{
-    width: 100vw;
-    height: 100vh;
+@import url('./cadastro.css');
+@import url('./modal.css');
+.container__conteudo{
+
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
